@@ -1,7 +1,8 @@
+import { IComponentParams } from "../../framework/core/component";
 import { WFMComponent } from "../../framework/index";
 
 class TabsPageComponent extends WFMComponent {
-    constructor(config) {
+    constructor(config : IComponentParams) {
         super(config)
     }
 }

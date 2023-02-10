@@ -1,7 +1,8 @@
+import { IComponentParams } from "../../framework/core/component";
 import { WFMComponent } from "../../framework/index";
 
 class HomePageComponent extends WFMComponent {
-    constructor(config) {
+    constructor(config: IComponentParams) {
         super(config)
     }
 }

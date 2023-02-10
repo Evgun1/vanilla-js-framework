@@ -1,9 +1,11 @@
+import { IComponentParams } from "../framework/core/component";
 import { WFMComponent } from "../framework/index";
 
 class AppComponent extends WFMComponent {
-    constructor(config) {
+    constructor(config: IComponentParams) {
         super(config)
     }
+    
 }
 
 export const appComponent = new AppComponent({
@@ -11,8 +13,7 @@ export const appComponent = new AppComponent({
     template: `
         <app-header></app-header>
 
-    <router-outlet>
-    </router-outlet>
+    <router-outlet></router-outlet>
 
         <div class="row">
             <div class="col s6 offset-s3" style="margin-top: 40px">
